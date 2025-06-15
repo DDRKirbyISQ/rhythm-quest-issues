@@ -11,16 +11,15 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      description: If possible, please include a screenshot or video of the issue in action!
+      placeholder: Please describe the issue in as much detail as possible.
     validations:
       required: true
   - type: dropdown
     id: platform
     attributes:
       label: Platform
-      description: What version of our software are you running?
+      description: What version of the game did you experience the bug on?
       options:
         - Web Demo
         - Windows Demo
@@ -30,14 +29,19 @@ body:
     validations:
       required: true
   - type: input
-    id: system
+    id: version
     attributes:
-      label: What browser or operating system version are you using?
-      placeholder: e.g. Chrome, Firefox, Windows 10
+      label: What version of the game were you playing?
+      description: You can find the version number in the lower-left corner of the title screen.
+      placeholder: e.g. 0.35.1
   - type: markdown
     attributes:
       value: |
-        How to find Unity logs:
+        arst
+        How to find Unity player logs:
+        On **Windows**: navigate to `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\Player.log`
+        On **Mac**: you can find this at `~/Library/Logs/DDRKirby(ISQ)/Rhythm Quest/Player.log`
+        On **Linux**: the log is at `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/Player.log
   - type: textarea
     id: logs
     attributes:
