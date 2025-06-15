@@ -33,22 +33,26 @@ body:
       label: What version of the game were you playing?
       description: You can find the version number in the lower-left corner of the title screen.
       placeholder: (e.g. 0.35.1)
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Unity Player Log output
+      description: Please copy and paste any relevant log output from the **Unity player log** (see directions below).
+      placeholder: (see below instructions on where to find this)
+      render: shell
   - type: markdown
     attributes:
       value: |
-        ## How to find Unity player logs:
+        <details>
+        <summary>How to find Unity player logs ...</summary>
         Unity outputs logs to a specific file which is created every time you run the game. This often has relevant information that will help debug the issue.
         | Platform | File Location |
         | --- | --- |
         | Windows| `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\Player.log`. |
         | Mac | `~/Library/Logs/DDRKirby(ISQ)/Rhythm Quest/Player.log` |
-        | Linux | `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/Player.log |
-        | Web | Check the browser console (usually by pressing `F12` and clicking on the "Console" tab).
+        | Linux | `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/Player.log` |
+        | Web | Check the browser console (usually by pressing `F12` and clicking on the "Console" tab). |        
         The `Player.log` file is recreated from scratch every time the game runs. The previous run can be found at `Player-prev.log` in the same directory.
-  - type: textarea
-    id: log
-    attributes:
-      label: Unity Player Log output
-      description: Please copy and paste any relevant log output from the **Unity player log** (see directions above).
-      placeholder: (paste the log output here)
-      render: shell
+        </details>
