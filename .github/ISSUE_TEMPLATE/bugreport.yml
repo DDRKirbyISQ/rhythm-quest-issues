@@ -10,22 +10,21 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: If possible, please include a screenshot or video of the issue in action!
-      placeholder: Please describe the issue in as much detail as possible.
+      label: What happened? How can the issue be reproduced?
+      description: Please describe the issue in as much detail as possible.
+      placeholder: If possible, please include a screenshot or video of the issue in action!
     validations:
       required: true
   - type: dropdown
     id: platform
     attributes:
       label: Platform
-      description: What version of the game did you experience the bug on?
+      description: What platform did you experience the bug on?
       options:
         - Web Demo
         - Windows Demo
         - Mac Demo
         - Linux Demo
-      default: 0
     validations:
       required: true
   - type: input
@@ -33,18 +32,26 @@ body:
     attributes:
       label: What version of the game were you playing?
       description: You can find the version number in the lower-left corner of the title screen.
-      placeholder: e.g. 0.35.1
+      placeholder: (e.g. 0.35.1)
   - type: markdown
     attributes:
       value: |
-        arst
-        How to find Unity player logs:
-        On **Windows**: navigate to `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\Player.log`
-        On **Mac**: you can find this at `~/Library/Logs/DDRKirby(ISQ)/Rhythm Quest/Player.log`
-        On **Linux**: the log is at `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/Player.log
+        ## How to find Unity player logs:
+        Unity outputs logs to a specific file which is created every time you run the game. This will often have relevant information that will help debug the issue.        
+        ### Windows
+        Open the file at `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\Player.log`.        
+        ### Mac
+        Open the file at `~/Library/Logs/DDRKirby(ISQ)/Rhythm Quest/Player.log`
+        ### Linux
+        Open the file at `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/Player.log
+        ### Web
+        Logs are output to the JavaScript console. You can usually find this by pressing `F12` and clicking on the "Console" tab.
+        ### Previous player log
+        The `Player.log` file is recreated from scratch every time the game runs. The previous run can be found at `Player-prev.log` in the same directory.
   - type: textarea
-    id: logs
+    id: log
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: Unity Player Log output
+      description: Please copy and paste any relevant log output from the **Unity player log** (see directions above).
+      placeholder: (paste the log output here)
       render: shell
