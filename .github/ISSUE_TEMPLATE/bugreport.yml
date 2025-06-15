@@ -37,16 +37,13 @@ body:
     attributes:
       value: |
         ## How to find Unity player logs:
-        Unity outputs logs to a specific file which is created every time you run the game. This will often have relevant information that will help debug the issue.        
-        ### Windows
-        Open the file at `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\Player.log`.        
-        ### Mac
-        Open the file at `~/Library/Logs/DDRKirby(ISQ)/Rhythm Quest/Player.log`
-        ### Linux
-        Open the file at `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/Player.log
-        ### Web
-        Logs are output to the JavaScript console. You can usually find this by pressing `F12` and clicking on the "Console" tab.
-        ### Previous player log
+        Unity outputs logs to a specific file which is created every time you run the game. This often has relevant information that will help debug the issue.
+        | Platform | File Location |
+        | --- | --- |
+        | Windows| `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\Player.log`. |
+        | Mac | `~/Library/Logs/DDRKirby(ISQ)/Rhythm Quest/Player.log` |
+        | Linux | `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/Player.log |
+        | Web | Check the browser console (usually by pressing `F12` and clicking on the "Console" tab).
         The `Player.log` file is recreated from scratch every time the game runs. The previous run can be found at `Player-prev.log` in the same directory.
   - type: textarea
     id: log
