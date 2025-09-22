@@ -9,7 +9,7 @@ This will automatically use the "bug report" template, which contains various us
 
 # Feedback and Suggestions
 This issue tracker is only for bugs and issues, not for feature requests, feedback, or suggestions.
-Instead, please send an email to feedback@rhythmquestgame.com. I don't have the bandwidth to personally reply to every email, but I do check and receive all of them.
+If you have feedback of this type, please instead send an email to feedback@rhythmquestgame.com. I don't have the bandwidth to personally reply to every email, but I do check all of them.
 
 # Tracking issues
 You can view the list of existing issues at https://github.com/DDRKirbyISQ/rhythm-quest-issues/issues
