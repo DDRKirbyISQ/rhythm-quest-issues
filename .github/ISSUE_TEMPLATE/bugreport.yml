@@ -50,7 +50,7 @@ body:
         
         | Platform | File Location |
         | --- | --- |
-        | Windows | `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\Player.log`. |
+        | Windows | `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\Player.log` |
         | Mac | `~/Library/Logs/DDRKirby(ISQ)/Rhythm Quest/Player.log` |
         | Linux | `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/Player.log` |
         | Web | Check the browser console (usually by pressing `F12` and clicking on the "Console" tab). |
@@ -59,19 +59,19 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Save Data
+        ## Save Data Location
         In certain cases it may be useful to attach save data to your game. Saved data is split into two files -- one for saving game progress and another for saving game preferences.
 
         ### Demo Save Data
         | Platform | File Location |
         | --- | --- |
-        | Windows | `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\RhythmQuestDemoSaves\save.dat`. |
+        | Windows | `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\RhythmQuestDemoSaves\save.dat` |
         | Mac | `~/Library/Application Support/DDRKirby(ISQ)/Rhythm Quest/RhythmQuestDemoSaves/save.dat` |
         | Linux | `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/RhythmQuestDemoSaves/save.dat` |
         
         ### Preferences Data
         | Platform | File Location |
         | --- | --- |
-        | Windows | `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\RhythmQuestSaves\prefs.dat`. |
+        | Windows | `%USERPROFILE%\AppData\LocalLow\DDRKirby(ISQ)\Rhythm Quest\RhythmQuestSaves\prefs.dat` |
         | Mac | `~/Library/Application Support/DDRKirby(ISQ)/Rhythm Quest/RhythmQuestSaves/prefs.dat` |
         | Linux | `~/.config/unity3d/DDRKirby(ISQ)/Rhythm Quest/RhythmQuestSaves/prefs.dat` |
